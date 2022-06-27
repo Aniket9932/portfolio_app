@@ -2,8 +2,10 @@
 
 import { Flex, Heading, IconButton, Spacer, useColorMode, VStack } from "@chakra-ui/react";
 import { FaSun , FaMoon, FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
+import About from "./components/About";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 import Social from "./components/Social";
 
 // function App() {
@@ -21,7 +23,7 @@ function App() {
     
 
     return (
-      <VStack p="5">
+      <VStack align={'left'} p='10'>
         <Flex width="100%">
             <Heading 
             ml="2" size="md" fontWeight="semibold" color="cyan.400">Portfolio</Heading>
@@ -37,6 +39,8 @@ function App() {
         <Header />
         <Social />
         <Profile />
+        <Projects />
+        <About />
       </VStack>
       
     )
